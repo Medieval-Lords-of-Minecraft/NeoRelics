@@ -48,7 +48,7 @@ public class Commands implements CommandExecutor, TabCompleter {
 				p = (Player) sender;
 			}
 			ItemStack relic = NeoRelics.getRelics().get(args[1 + offset]).getItem();
-			Bukkit.getLogger().info("[NeoRelics] Gave relic " + args[1 + offset] + " to player " + p.getName());
+			Bukkit.getLogger().info("[NeoRelics] User " + sender.getName() + " gave relic " + args[1 + offset] + " to player " + p.getName());
 			HashMap<Integer, ItemStack> failed = p.getInventory().addItem(relic);
 			if (!failed.isEmpty()) {
 				for (Entry<Integer, ItemStack> e : failed.entrySet()) {
