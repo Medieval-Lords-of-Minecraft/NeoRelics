@@ -14,8 +14,8 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import de.tr7zw.nbtapi.NBTItem;
-import me.neoblade298.neocore.info.BossInfo;
-import me.neoblade298.neocore.info.InfoAPI;
+import me.neoblade298.neocore.bukkit.info.BossInfo;
+import me.neoblade298.neocore.bukkit.info.InfoAPI;
 import me.neoblade298.neocore.util.Util;
 
 public class Relic {
