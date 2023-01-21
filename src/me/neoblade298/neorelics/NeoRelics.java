@@ -25,7 +25,7 @@ import com.sucy.skill.api.event.PlayerAttributeUnloadEvent;
 import de.tr7zw.nbtapi.NBTItem;
 import me.neoblade298.neocore.bukkit.NeoCore;
 import me.neoblade298.neocore.shared.exceptions.NeoIOException;
-import me.neoblade298.neocore.shared.io.FileLoader;
+import me.neoblade298.neocore.bukkit.io.FileLoader;
 
 public class NeoRelics extends JavaPlugin implements Listener {
 	private static HashMap<String, Relic> relics;
