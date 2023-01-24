@@ -16,7 +16,8 @@ import org.bukkit.inventory.meta.ItemMeta;
 import de.tr7zw.nbtapi.NBTItem;
 import me.neoblade298.neocore.bukkit.info.BossInfo;
 import me.neoblade298.neocore.bukkit.info.InfoAPI;
-import me.neoblade298.neocore.util.Util;
+import me.neoblade298.neocore.shared.util.SharedUtil;
+
 
 public class Relic {
 	private HashMap<Integer, SetEffect> effects = new HashMap<Integer, SetEffect>();
@@ -58,7 +59,7 @@ public class Relic {
 	private ArrayList<String> parseLore(List<String> cfg) {
 		ArrayList<String> lore = new ArrayList<String>();
 		for (String line : cfg) {
-			lore.add(Util.translateColors(line));
+			lore.add(SharedUtil.translateColors(line));
 		}
 		return lore;
 	}
